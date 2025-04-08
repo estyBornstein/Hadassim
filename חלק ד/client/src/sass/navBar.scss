@@ -1,0 +1,66 @@
+$nav-bg: #fff;
+$nav-link-color:  #5f9ea0; // ירוק בהיר
+$nav-link-hover:#229397; // ירוק כהה יותר
+$nav-text-color: #333;
+$nav-error: #d9534f; // צבע שגיאה (לשגיאות אפשריות)
+
+.navbar-container {
+    background-color: $nav-bg;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    
+    /* דבק לראש העמוד */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    /* מבטיח שה-navbar לא יכסה את התוכן שמתחתיו */
+    margin-top: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+        text-decoration: none;
+        color: $nav-link-color;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $nav-link-hover;
+            color: white;
+        }
+    }
+}
+
+.navbar-greeting {
+    color: $nav-text-color;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-message {
+    color: $nav-text-color;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.navbar-error {
+    color: $nav-error;
+    font-size: 14px;
+}
+
+/* כדי לוודא שהתוכן לא יכוסה על ידי ה-navbar */
+body {
+    padding-top: 60px; /* מתאים לפי הגובה של ה-navbar */
+}

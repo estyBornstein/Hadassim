@@ -1,0 +1,72 @@
+.products-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    position: relative; // מאפשר למקם את הכפתור בצורה מוחלטת
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    transition: none;
+}
+
+.close-button:hover {
+    color: #f44336; // צבע אדום כהה כאשר העכבר מעל
+}
+
+.products-header {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #5f9ea0;
+    text-align: center;
+}
+
+.products-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.product-button {
+    background: none;
+    border: none;
+    color: #5f9ea0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    transition: none;
+}
+
+.create-order-button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #5f9ea0;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}

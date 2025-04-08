@@ -1,0 +1,49 @@
+.supplier-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+}
+
+.supplier-header {
+    margin-bottom: 1.5rem;
+}
+
+.supplier-header h1 {
+    font-size: 2rem;
+    color: #5f9ea0;
+    margin-bottom: 0.5rem;
+}
+
+.supplier-header h2 {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.supplier-info {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.supplier-info h2 {
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: #5f9ea0;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #468b8b;
+}
